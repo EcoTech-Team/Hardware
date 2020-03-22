@@ -1,0 +1,373 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "SafetySystem"
+Date "2019-02-17"
+Rev "1"
+Comp "EcoTech Team"
+Comment1 "Układ spełniający wymogi bezpieczeństwa."
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5CC8BA42
+P 8950 3350
+F 0 "H1" H 9050 3350 50  0000 L CNN
+F 1 "MountingHole" H 9050 3305 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8950 3350 50  0001 C CNN
+F 3 "~" H 8950 3350 50  0001 C CNN
+	1    8950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5CC8BCA2
+P 9250 3350
+F 0 "H2" H 9350 3350 50  0000 L CNN
+F 1 "MountingHole" H 9350 3305 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9250 3350 50  0001 C CNN
+F 3 "~" H 9250 3350 50  0001 C CNN
+	1    9250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5CC8C159
+P 8950 3550
+F 0 "H3" H 9050 3550 50  0000 L CNN
+F 1 "MountingHole" H 9050 3505 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8950 3550 50  0001 C CNN
+F 3 "~" H 8950 3550 50  0001 C CNN
+	1    8950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5CC8C160
+P 9250 3550
+F 0 "H4" H 9350 3550 50  0000 L CNN
+F 1 "MountingHole" H 9350 3505 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9250 3550 50  0001 C CNN
+F 3 "~" H 9250 3550 50  0001 C CNN
+	1    9250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Library:EcoTechLogo G1
+U 1 1 5CC8C718
+P 9150 2800
+F 0 "G1" H 9150 2900 50  0001 C CNN
+F 1 "EcoTechLogo" H 9175 2800 50  0000 L CNN
+F 2 "Footprints:EcoTech" H 9150 2800 50  0001 C CNN
+F 3 "" H 9150 2800 50  0001 C CNN
+	1    9150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5CC65A40
+P 4550 3200
+F 0 "#PWR030" H 4550 2950 50  0001 C CNN
+F 1 "GND" H 4555 3027 50  0000 C CNN
+F 2 "" H 4550 3200 50  0001 C CNN
+F 3 "" H 4550 3200 50  0001 C CNN
+	1    4550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E8BC1D0
+P 6750 3800
+F 0 "#PWR?" H 6750 3650 50  0001 C CNN
+F 1 "+5V" H 6765 3973 50  0000 C CNN
+F 2 "" H 6750 3800 50  0001 C CNN
+F 3 "" H 6750 3800 50  0001 C CNN
+	1    6750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E8C7B9D
+P 7000 4550
+F 0 "R3" H 7070 4596 50  0000 L CNN
+F 1 "1k" H 7070 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6930 4550 50  0001 C CNN
+F 3 "~" H 7000 4550 50  0001 C CNN
+	1    7000 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 3800 6750 3850
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5E8E52B7
+P 6350 3850
+F 0 "J2" H 6458 4031 50  0000 C CNN
+F 1 "Molex 2x1" H 6458 3940 50  0000 C CNN
+F 2 "" H 6350 3850 50  0001 C CNN
+F 3 "~" H 6350 3850 50  0001 C CNN
+	1    6350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3850 6750 3850
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5E8F56C5
+P 7000 3950
+F 0 "TP4" H 7058 4024 50  0000 L CNN
+F 1 "TestPoint" H 7058 3979 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7200 3950 50  0001 C CNN
+F 3 "~" H 7200 3950 50  0001 C CNN
+	1    7000 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3950 7000 3950
+Wire Wire Line
+	7000 3950 7000 4400
+Connection ~ 7000 3950
+$Comp
+L power:+5V #PWR?
+U 1 1 5E81A085
+P 6950 2050
+F 0 "#PWR?" H 6950 1900 50  0001 C CNN
+F 1 "+5V" H 6965 2223 50  0000 C CNN
+F 2 "" H 6950 2050 50  0001 C CNN
+F 3 "" H 6950 2050 50  0001 C CNN
+	1    6950 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2200 5650 2200
+Connection ~ 5450 2200
+Text Notes 4700 1750 0    50   ~ 0
+Motor Controller connector
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5CC613D1
+P 5450 2200
+F 0 "TP1" H 5508 2274 50  0000 L CNN
+F 1 "TestPoint" H 5508 2229 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 5650 2200 50  0001 C CNN
+F 3 "~" H 5650 2200 50  0001 C CNN
+	1    5450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5CC6563D
+P 4550 3200
+F 0 "TP2" H 4608 3274 50  0000 L CNN
+F 1 "TestPoint" H 4608 3229 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 4750 3200 50  0001 C CNN
+F 3 "~" H 4750 3200 50  0001 C CNN
+	1    4550 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 2200
+Wire Wire Line
+	4550 2200 5000 2200
+Wire Wire Line
+	4550 2500 5000 2500
+Connection ~ 4550 2500
+Connection ~ 5000 2500
+Connection ~ 4550 2200
+Text Label 5650 2400 2    50   ~ 0
+BTN
+Text Label 5650 2300 2    50   ~ 0
+FR_ADC
+Wire Wire Line
+	5650 2500 5000 2500
+Wire Wire Line
+	5000 2200 5450 2200
+Wire Wire Line
+	4500 2200 4550 2200
+Wire Wire Line
+	4550 2550 4550 2500
+$Comp
+L power:GND #PWR0104
+U 1 1 5E80D8BD
+P 4550 2550
+F 0 "#PWR0104" H 4550 2300 50  0001 C CNN
+F 1 "GND" H 4555 2377 50  0000 C CNN
+F 2 "" H 4550 2550 50  0001 C CNN
+F 3 "" H 4550 2550 50  0001 C CNN
+	1    4550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E8010D2
+P 5000 2350
+F 0 "C2" H 5115 2396 50  0000 L CNN
+F 1 "10n" H 5115 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5038 2200 50  0001 C CNN
+F 3 "~" H 5000 2350 50  0001 C CNN
+	1    5000 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2200 4500 2150
+$Comp
+L power:+5V #PWR0103
+U 1 1 5E7E467E
+P 4500 2150
+F 0 "#PWR0103" H 4500 2000 50  0001 C CNN
+F 1 "+5V" H 4515 2323 50  0000 C CNN
+F 2 "" H 4500 2150 50  0001 C CNN
+F 3 "" H 4500 2150 50  0001 C CNN
+	1    4500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5EB43075
+P 5850 2400
+F 0 "J1" H 5958 2681 50  0000 C CNN
+F 1 "Molex 1x4" H 5958 2590 50  0000 C CNN
+F 2 "" H 5850 2400 50  0001 C CNN
+F 3 "~" H 5850 2400 50  0001 C CNN
+	1    5850 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CB0FEF8
+P 4550 2350
+F 0 "C1" H 4665 2396 50  0000 L CNN
+F 1 "100n" H 4665 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4588 2200 50  0001 C CNN
+F 3 "~" H 4550 2350 50  0001 C CNN
+	1    4550 2350
+	1    0    0    -1  
+$EndComp
+Text Notes 6750 1750 0    50   ~ 0
+LED Diodes
+$Comp
+L power:GND #PWR032
+U 1 1 5C6B80AB
+P 6950 2650
+F 0 "#PWR032" H 6950 2400 50  0001 C CNN
+F 1 "GND" H 6955 2477 50  0000 C CNN
+F 2 "" H 6950 2650 50  0001 C CNN
+F 3 "" H 6950 2650 50  0001 C CNN
+	1    6950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D1
+U 1 1 5C6B80A4
+P 6950 2500
+F 0 "D1" V 6988 2382 50  0000 R CNN
+F 1 "GREEN" V 6897 2382 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6950 2500 50  0001 C CNN
+F 3 "~" H 6950 2500 50  0001 C CNN
+	1    6950 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C6B809D
+P 6950 2200
+F 0 "R1" H 7020 2246 50  0000 L CNN
+F 1 "1k" H 7020 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6880 2200 50  0001 C CNN
+F 3 "~" H 6950 2200 50  0001 C CNN
+	1    6950 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 4350
+Wire Wire Line
+	5100 4350 5350 4350
+Wire Wire Line
+	4500 4350 4500 4500
+Connection ~ 4500 4350
+Wire Wire Line
+	5100 4350 4500 4350
+Wire Wire Line
+	4500 4250 4500 4350
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5E8A2A7F
+P 5100 4350
+F 0 "TP3" H 5158 4424 50  0000 L CNN
+F 1 "TestPoint" H 5158 4379 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 5300 4350 50  0001 C CNN
+F 3 "~" H 5300 4350 50  0001 C CNN
+	1    5100 4350
+	1    0    0    -1  
+$EndComp
+Text Label 5350 4350 0    50   ~ 0
+FR_ADC
+Wire Wire Line
+	4500 4800 4500 4950
+Wire Wire Line
+	4500 3800 4500 3950
+$Comp
+L power:+5V #PWR?
+U 1 1 5E89B60F
+P 4500 3800
+F 0 "#PWR?" H 4500 3650 50  0001 C CNN
+F 1 "+5V" H 4515 3973 50  0000 C CNN
+F 2 "" H 4500 3800 50  0001 C CNN
+F 3 "" H 4500 3800 50  0001 C CNN
+	1    4500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E89A7F7
+P 4500 4950
+F 0 "#PWR?" H 4500 4700 50  0001 C CNN
+F 1 "GND" H 4505 4777 50  0000 C CNN
+F 2 "" H 4500 4950 50  0001 C CNN
+F 3 "" H 4500 4950 50  0001 C CNN
+	1    4500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E896026
+P 4500 4650
+F 0 "R2" H 4570 4696 50  0000 L CNN
+F 1 "1k" H 4570 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 4650 50  0001 C CNN
+F 3 "~" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Variable U1
+U 1 1 5E887E4B
+P 4500 4100
+F 0 "U1" H 4628 4146 50  0000 L CNN
+F 1 "Force Meter" H 4628 4055 50  0000 L CNN
+F 2 "" V 4430 4100 50  0001 C CNN
+F 3 "~" H 4500 4100 50  0001 C CNN
+	1    4500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E98FDB4
+P 7000 4850
+F 0 "#PWR?" H 7000 4600 50  0001 C CNN
+F 1 "GND" H 7005 4677 50  0000 C CNN
+F 2 "" H 7000 4850 50  0001 C CNN
+F 3 "" H 7000 4850 50  0001 C CNN
+	1    7000 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4700 7000 4850
+Text Label 7300 3950 0    50   ~ 0
+BTN
+Wire Wire Line
+	7000 3950 7300 3950
+$EndSCHEMATC
