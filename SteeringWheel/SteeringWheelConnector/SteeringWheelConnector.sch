@@ -66,8 +66,8 @@ U 1 1 5CAFF805
 P 4700 3950
 F 0 "D1" V 4700 4029 50  0000 L CNN
 F 1 "D_TVS_ALT" V 4745 4029 50  0001 L CNN
-F 2 "Diode_SMD:D_SMC" H 4700 3950 50  0001 C CNN
-F 3 "~" H 4700 3950 50  0001 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 4700 3950 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/tgl34-30ca-dio/diody-transil-smd-dwukierunkowe/diotec-semiconductor/tgl34-30ca/" H 4700 3950 50  0001 C CNN
 	1    4700 3950
 	0    1    1    0   
 $EndComp
@@ -141,63 +141,41 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5CC8BA42
-P 6000 2450
-F 0 "H1" H 6100 2450 50  0000 L CNN
-F 1 "MountingHole" H 6100 2405 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6000 2450 50  0001 C CNN
-F 3 "~" H 6000 2450 50  0001 C CNN
-	1    6000 2450
+P 6100 2800
+F 0 "H1" H 6200 2800 50  0000 L CNN
+F 1 "MountingHole" H 6200 2755 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6100 2800 50  0001 C CNN
+F 3 "~" H 6100 2800 50  0001 C CNN
+	1    6100 2800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5CC8BCA2
-P 6300 2450
-F 0 "H2" H 6400 2450 50  0000 L CNN
-F 1 "MountingHole" H 6400 2405 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6300 2450 50  0001 C CNN
-F 3 "~" H 6300 2450 50  0001 C CNN
-	1    6300 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5CC8C159
-P 6000 2650
-F 0 "H3" H 6100 2650 50  0000 L CNN
-F 1 "MountingHole" H 6100 2605 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6000 2650 50  0001 C CNN
-F 3 "~" H 6000 2650 50  0001 C CNN
-	1    6000 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5CC8C160
-P 6300 2650
-F 0 "H4" H 6400 2650 50  0000 L CNN
-F 1 "MountingHole" H 6400 2605 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6300 2650 50  0001 C CNN
-F 3 "~" H 6300 2650 50  0001 C CNN
-	1    6300 2650
+P 6400 2800
+F 0 "H2" H 6500 2800 50  0000 L CNN
+F 1 "MountingHole" H 6500 2755 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6400 2800 50  0001 C CNN
+F 3 "~" H 6400 2800 50  0001 C CNN
+	1    6400 2800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Library:EcoTechLogo G1
 U 1 1 5CC8C718
-P 5150 2550
-F 0 "G1" H 5150 2650 50  0001 C CNN
-F 1 "EcoTechLogo" H 5175 2550 50  0000 L CNN
-F 2 "Footprints:EcoTech" H 5150 2550 50  0001 C CNN
-F 3 "" H 5150 2550 50  0001 C CNN
-	1    5150 2550
+P 5250 2900
+F 0 "G1" H 5250 3000 50  0001 C CNN
+F 1 "EcoTechLogo" H 5275 2900 50  0000 L CNN
+F 2 "Footprints:EcoTech" H 5250 2900 50  0001 C CNN
+F 3 "" H 5250 2900 50  0001 C CNN
+	1    5250 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L Connector:TestPoint TP6
 U 1 1 5CC624FB
 P 5250 3800
-F 0 "TP3" H 5192 3873 50  0000 R CNN
+F 0 "TP6" H 5192 3873 50  0000 R CNN
 F 1 "TestPoint" H 5308 3829 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 5450 3800 50  0001 C CNN
 F 3 "~" H 5450 3800 50  0001 C CNN
@@ -214,8 +192,8 @@ L Connector:Conn_01x04_Male J1
 U 1 1 5EB20C95
 P 4150 3700
 F 0 "J1" H 4258 3981 50  0000 R CNN
-F 1 "Goldpins 1x4" H 4258 3890 50  0000 R CNN
-F 2 "" H 4150 3700 50  0001 C CNN
+F 1 "Goldpins 2x2" H 4258 3890 50  0000 R CNN
+F 2 "Footprints:connector2x2" H 4150 3700 50  0001 C CNN
 F 3 "https://www.mouser.com/ProductDetail/Molex/503763-0491?qs=sGAEpiMZZMs%252BGHln7q6pmyrUVsykU3q%2Fmv%2Fw73tF2evrvCeiEFnH3g%3D%3D" H 4150 3700 50  0001 C CNN
 	1    4150 3700
 	1    0    0    -1  
@@ -274,16 +252,16 @@ U 1 1 5E801674
 P 7500 3750
 F 0 "J2" H 7608 4031 50  0000 R CNN
 F 1 "Molex 1x4" H 7608 3940 50  0000 R CNN
-F 2 "" H 7500 3750 50  0001 C CNN
+F 2 "Footprints:MOLEX_5037630491" H 7500 3750 50  0001 C CNN
 F 3 "https://www.mouser.com/ProductDetail/Molex/503763-0491?qs=sGAEpiMZZMs%252BGHln7q6pmyrUVsykU3q%2Fmv%2Fw73tF2evrvCeiEFnH3g%3D%3D" H 7500 3750 50  0001 C CNN
 	1    7500 3750
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5E802224
 P 7050 4050
-F 0 "#PWR?" H 7050 3800 50  0001 C CNN
+F 0 "#PWR0103" H 7050 3800 50  0001 C CNN
 F 1 "GND" H 7055 3877 50  0000 C CNN
 F 2 "" H 7050 4050 50  0001 C CNN
 F 3 "" H 7050 4050 50  0001 C CNN
@@ -300,16 +278,16 @@ U 1 1 5E806ADF
 P 6750 3900
 F 0 "D3" V 6750 3979 50  0000 L CNN
 F 1 "D_TVS_ALT" V 6795 3979 50  0001 L CNN
-F 2 "Diode_SMD:D_SMC" H 6750 3900 50  0001 C CNN
-F 3 "~" H 6750 3900 50  0001 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6750 3900 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/tgl34-30ca-dio/diody-transil-smd-dwukierunkowe/diotec-semiconductor/tgl34-30ca/" H 6750 3900 50  0001 C CNN
 	1    6750 3900
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 5E806AE5
 P 6750 4050
-F 0 "#PWR?" H 6750 3800 50  0001 C CNN
+F 0 "#PWR0104" H 6750 3800 50  0001 C CNN
 F 1 "GND" H 6755 3877 50  0000 C CNN
 F 2 "" H 6750 4050 50  0001 C CNN
 F 3 "" H 6750 4050 50  0001 C CNN
@@ -319,10 +297,10 @@ $EndComp
 Wire Wire Line
 	6750 3750 7300 3750
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0105
 U 1 1 5E80784F
 P 6350 3750
-F 0 "#PWR?" H 6350 3600 50  0001 C CNN
+F 0 "#PWR0105" H 6350 3600 50  0001 C CNN
 F 1 "+12V" H 6365 3923 50  0000 C CNN
 F 2 "" H 6350 3750 50  0001 C CNN
 F 3 "" H 6350 3750 50  0001 C CNN
@@ -366,30 +344,30 @@ Text Label 7300 3550 2    50   ~ 0
 B
 Text Label 7300 3650 2    50   ~ 0
 A
-Text Label 7350 3250 2    50   ~ 0
+Text Label 7150 3200 2    50   ~ 0
 A
 $Comp
 L Connector:TestPoint TP5
 U 1 1 5E828D0A
-P 7350 3250
-F 0 "TP5" H 7408 3324 50  0000 L CNN
-F 1 "TestPoint" H 7408 3279 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7550 3250 50  0001 C CNN
-F 3 "~" H 7550 3250 50  0001 C CNN
-	1    7350 3250
+P 7150 3200
+F 0 "TP5" H 7208 3274 50  0000 L CNN
+F 1 "TestPoint" H 7208 3229 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7350 3200 50  0001 C CNN
+F 3 "~" H 7350 3200 50  0001 C CNN
+	1    7150 3200
 	1    0    0    -1  
 $EndComp
-Text Label 7100 3250 2    50   ~ 0
+Text Label 6900 3200 2    50   ~ 0
 B
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5E828D11
-P 7100 3250
-F 0 "TP4" H 7158 3324 50  0000 L CNN
-F 1 "TestPoint" H 7158 3279 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7300 3250 50  0001 C CNN
-F 3 "~" H 7300 3250 50  0001 C CNN
-	1    7100 3250
+P 6900 3200
+F 0 "TP4" H 6958 3274 50  0000 L CNN
+F 1 "TestPoint" H 6958 3229 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7100 3200 50  0001 C CNN
+F 3 "~" H 7100 3200 50  0001 C CNN
+	1    6900 3200
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
