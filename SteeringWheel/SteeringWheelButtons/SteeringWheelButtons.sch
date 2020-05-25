@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -98,7 +98,7 @@ U 1 1 5E8E52B7
 P 7200 3050
 F 0 "J2" H 7308 3231 50  0000 C CNN
 F 1 "Molex 2x1" H 7308 3140 50  0000 C CNN
-F 2 "" H 7200 3050 50  0001 C CNN
+F 2 "Footprints:5037630291" H 7200 3050 50  0001 C CNN
 F 3 "~" H 7200 3050 50  0001 C CNN
 	1    7200 3050
 	1    0    0    -1  
@@ -365,9 +365,6 @@ F 3 "" H 6200 2200 50  0001 C CNN
 	1    6200 2200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6000 2050 6200 2050
-Connection ~ 6200 2050
 $Comp
 L power:GND #PWR?
 U 1 1 5ECEDC4E
@@ -379,8 +376,6 @@ F 3 "" H 6200 2350 50  0001 C CNN
 	1    6200 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6200 2050 6700 2050
 Connection ~ 6700 2050
 $Comp
 L power:GND #PWR?
@@ -393,4 +388,6 @@ F 3 "" H 6300 2950 50  0001 C CNN
 	1    6300 2950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6000 2050 6700 2050
 $EndSCHEMATC
